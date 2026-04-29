@@ -1,0 +1,6 @@
+=== RUN   TestRiskCaseWorkflowAndPlatformConfigPhase3
+--- PASS: TestRiskCaseWorkflowAndPlatformConfigPhase3 (0.20s)
+=== RUN   TestTenantBootstrapAcceptanceAndScopedIsolation
+--- PASS: TestTenantBootstrapAcceptanceAndScopedIsolation (0.10s)
+PASS
+ok  	game-admin/backend/internal/http	1.020s

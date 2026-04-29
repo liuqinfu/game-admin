@@ -1,0 +1,59 @@
+name: microservices-ci
+
+on:
+  push:
+    branches:
+      - main
+      - master
+      - 'codex/**'
+  pull_request:
+
+jobs:
+  backend-checks:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: backend/go.mod
+
+      - name: Go test
+        run: GIN_MODE=release go test ./...
+
+      - name: Go vet
+        run: go vet ./...
+
+  packaging-checks:
+    runs-on: ubuntu-latest
+    needs: backend-checks
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version-file: backend/go.mod
+
+      - name: Shell syntax checks
+        run: bash -n scripts/microservice-ops.sh scripts/run-microservices.sh scripts/migrate-microservices.sh scripts/build-microservice-images.sh scripts/package-microservices.sh scripts/release-microservices.sh scripts/promote-release.sh scripts/rollback-release.sh scripts/observability.sh
+
+      - name: Render compose
+        run: |
+          cd backend
+          go run ./cmd/render-microservice-compose ../docker-compose.microservices.generated.yml
+
+      - name: Build release artifacts
+        run: ./scripts/release-microservices.sh gateway-service identity-service tenant-service notification-service
+
+      - name: Upload release artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: microservice-release-artifacts
+          path: deploy/releases/microservices

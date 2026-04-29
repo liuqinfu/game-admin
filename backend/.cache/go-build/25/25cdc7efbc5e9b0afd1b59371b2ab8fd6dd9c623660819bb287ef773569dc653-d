@@ -1,0 +1,3 @@
+./bootstrap_test.go
+./db_test.go
+./health_test.go

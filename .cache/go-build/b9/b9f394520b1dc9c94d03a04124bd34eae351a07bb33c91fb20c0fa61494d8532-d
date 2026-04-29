@@ -1,0 +1,6 @@
+=== RUN   TestTenantBrandAdminCanManageScopedRBAC
+--- PASS: TestTenantBrandAdminCanManageScopedRBAC (0.26s)
+=== RUN   TestTenantAdminCanManageTenantAndBrandScopedRBAC
+--- PASS: TestTenantAdminCanManageTenantAndBrandScopedRBAC (0.20s)
+PASS
+ok  	game-admin/backend/internal/http	2.546s

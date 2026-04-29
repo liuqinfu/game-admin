@@ -1,0 +1,51 @@
+version: '3.9'
+services:
+  backend:
+    image: golang:1.25
+    working_dir: /app/backend
+    command: sh -c 'go run ./cmd/server'
+    environment:
+      APP_ENV: development
+      HTTP_PORT: 8080
+      DATABASE_DRIVER: sqlite
+      DATABASE_DSN: data/app.db
+      REDIS_ENABLED: "false"
+      REDIS_ADDR: redis:6379
+      REDIS_PASSWORD: ""
+      REDIS_DB: "0"
+      REDIS_PREFIX: game-admin:
+      MQ_ENABLED: "false"
+      MQ_DRIVER: rabbitmq
+      MQ_URL: amqp://guest:guest@rabbitmq:5672/
+      MQ_TOPIC: game-admin.events
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./:/app
+    depends_on:
+      - redis
+      - rabbitmq
+
+  frontend:
+    image: node:20
+    working_dir: /app/frontend
+    command: sh -c 'npm install && npm run dev -- --host 0.0.0.0 --port 5173'
+    environment:
+      VITE_API_BASE_URL: http://localhost:8080/api
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./:/app
+    depends_on:
+      - backend
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    ports:
+      - "5672:5672"
+      - "15672:15672"

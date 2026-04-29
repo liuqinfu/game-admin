@@ -1,0 +1,16 @@
+=== RUN   TestPayoutCompensatesRiskReleaseWhenTransactionFails
+=== PAUSE TestPayoutCompensatesRiskReleaseWhenTransactionFails
+=== RUN   TestPayoutFailureWithLocalClientsRestoresRiskCaseAndEvents
+=== PAUSE TestPayoutFailureWithLocalClientsRestoresRiskCaseAndEvents
+=== CONT  TestPayoutCompensatesRiskReleaseWhenTransactionFails
+=== CONT  TestPayoutFailureWithLocalClientsRestoresRiskCaseAndEvents
+--- PASS: TestPayoutCompensatesRiskReleaseWhenTransactionFails (0.12s)
+
+2026/04/28 23:44:26 [31;1m/Users/leon/project/game-admin/backend/internal/eventbus/service.go:72 [35;1mrecord not found
+[0m[33m[0.027ms] [34;1m[rows:0][0m SELECT * FROM `domain_event` WHERE idempotency_key = "risk.review:RC-WD-LOCAL-1:released" AND `domain_event`.`deleted_at` IS NULL ORDER BY `domain_event`.`id` LIMIT 1
+
+2026/04/28 23:44:26 [31;1m/Users/leon/project/game-admin/backend/internal/eventbus/service.go:72 [35;1mrecord not found
+[0m[33m[0.018ms] [34;1m[rows:0][0m SELECT * FROM `domain_event` WHERE idempotency_key = "risk.restore:RC-WD-LOCAL-1:pending" AND `domain_event`.`deleted_at` IS NULL ORDER BY `domain_event`.`id` LIMIT 1
+--- PASS: TestPayoutFailureWithLocalClientsRestoresRiskCaseAndEvents (0.13s)
+PASS
+ok  	game-admin/backend/internal/services/withdrawal	0.665s

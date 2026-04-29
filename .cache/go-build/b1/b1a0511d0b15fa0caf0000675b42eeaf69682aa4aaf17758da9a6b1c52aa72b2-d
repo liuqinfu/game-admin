@@ -1,0 +1,10 @@
+./bootstrap.go
+./db.go
+./health.go
+./logger.go
+./migrate.go
+./migrate_runtime.go
+./migration_registry.go
+./redis_runtime.go
+./seed_catalog.go
+./service.go

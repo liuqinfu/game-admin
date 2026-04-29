@@ -1,0 +1,16 @@
+=== RUN   TestAuthLoginAndProtectedRoutes
+--- PASS: TestAuthLoginAndProtectedRoutes (0.42s)
+=== RUN   TestAgentAccountLoginIsScopedAtQueryLayer
+--- PASS: TestAgentAccountLoginIsScopedAtQueryLayer (0.26s)
+=== RUN   TestPhase3TenantScopedEndpoints
+=== RUN   TestPhase3TenantScopedEndpoints/tenant_scoped_list_endpoints_only_return_in-scope_records
+=== RUN   TestPhase3TenantScopedEndpoints/tenant_scoped_business_writes_reject_out_of_scope_references
+=== RUN   TestPhase3TenantScopedEndpoints/tenant_scoped_write_actions_reject_out_of_scope_records
+=== RUN   TestPhase3TenantScopedEndpoints/tenant_scoped_risk_case_flows_reject_out_of_scope_cases_and_keep_in-scope_writable
+--- PASS: TestPhase3TenantScopedEndpoints (0.27s)
+    --- PASS: TestPhase3TenantScopedEndpoints/tenant_scoped_list_endpoints_only_return_in-scope_records (0.01s)
+    --- PASS: TestPhase3TenantScopedEndpoints/tenant_scoped_business_writes_reject_out_of_scope_references (0.02s)
+    --- PASS: TestPhase3TenantScopedEndpoints/tenant_scoped_write_actions_reject_out_of_scope_records (0.00s)
+    --- PASS: TestPhase3TenantScopedEndpoints/tenant_scoped_risk_case_flows_reject_out_of_scope_cases_and_keep_in-scope_writable (0.01s)
+PASS
+ok  	game-admin/backend/internal/http	1.787s

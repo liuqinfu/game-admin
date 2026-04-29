@@ -1,0 +1,4 @@
+=== RUN   TestAuthLoginAndProtectedRoutes
+--- PASS: TestAuthLoginAndProtectedRoutes (0.37s)
+PASS
+ok  	game-admin/backend/internal/http	1.468s

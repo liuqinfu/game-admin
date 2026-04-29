@@ -1,0 +1,10 @@
+{
+  "service": "gateway-service",
+  "modules": "gateway",
+  "targetOS": "linux",
+  "targetArch": "amd64",
+  "port": "8080",
+  "binary": "bin/gateway-service",
+  "builtAtUTC": "2026-04-28T13:13:57Z",
+  "gitCommit": "unknown"
+}

@@ -1,0 +1,38 @@
+=== RUN   TestNewHandlerRoutesBySharedMetadata
+=== PAUSE TestNewHandlerRoutesBySharedMetadata
+=== RUN   TestGatewayReadyzProbesUpstreamsAndReturnsDependencyDetails
+=== PAUSE TestGatewayReadyzProbesUpstreamsAndReturnsDependencyDetails
+=== RUN   TestGatewayReadyzMarksTimeoutAsDependencyError
+=== PAUSE TestGatewayReadyzMarksTimeoutAsDependencyError
+=== RUN   TestGatewayProxyNormalizesCorrelationHeaders
+=== PAUSE TestGatewayProxyNormalizesCorrelationHeaders
+=== CONT  TestNewHandlerRoutesBySharedMetadata
+=== CONT  TestGatewayReadyzMarksTimeoutAsDependencyError
+=== CONT  TestGatewayProxyNormalizesCorrelationHeaders
+=== RUN   TestNewHandlerRoutesBySharedMetadata/health
+=== CONT  TestGatewayReadyzProbesUpstreamsAndReturnsDependencyDetails
+--- PASS: TestGatewayProxyNormalizesCorrelationHeaders (0.00s)
+=== RUN   TestNewHandlerRoutesBySharedMetadata/ready
+--- PASS: TestGatewayReadyzMarksTimeoutAsDependencyError (0.00s)
+=== RUN   TestNewHandlerRoutesBySharedMetadata/metrics
+=== RUN   TestNewHandlerRoutesBySharedMetadata/identity
+--- PASS: TestGatewayReadyzProbesUpstreamsAndReturnsDependencyDetails (0.00s)
+=== RUN   TestNewHandlerRoutesBySharedMetadata/tenant_shared_enum
+=== RUN   TestNewHandlerRoutesBySharedMetadata/agent
+=== RUN   TestNewHandlerRoutesBySharedMetadata/relation
+=== RUN   TestNewHandlerRoutesBySharedMetadata/recharge_shared_enum
+=== RUN   TestNewHandlerRoutesBySharedMetadata/recharge_callback
+=== RUN   TestNewHandlerRoutesBySharedMetadata/unknown
+--- PASS: TestNewHandlerRoutesBySharedMetadata (0.00s)
+    --- PASS: TestNewHandlerRoutesBySharedMetadata/health (0.00s)
+    --- PASS: TestNewHandlerRoutesBySharedMetadata/ready (0.00s)
+    --- PASS: TestNewHandlerRoutesBySharedMetadata/metrics (0.00s)
+    --- PASS: TestNewHandlerRoutesBySharedMetadata/identity (0.00s)
+    --- PASS: TestNewHandlerRoutesBySharedMetadata/tenant_shared_enum (0.00s)
+    --- PASS: TestNewHandlerRoutesBySharedMetadata/agent (0.00s)
+    --- PASS: TestNewHandlerRoutesBySharedMetadata/relation (0.00s)
+    --- PASS: TestNewHandlerRoutesBySharedMetadata/recharge_shared_enum (0.00s)
+    --- PASS: TestNewHandlerRoutesBySharedMetadata/recharge_callback (0.00s)
+    --- PASS: TestNewHandlerRoutesBySharedMetadata/unknown (0.00s)
+PASS
+ok  	game-admin/backend/internal/gateway	0.640s

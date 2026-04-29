@@ -1,0 +1,8 @@
+=== RUN   TestPhase3AuditGapIsolationFixes
+--- PASS: TestPhase3AuditGapIsolationFixes (0.15s)
+=== RUN   TestAgentHierarchyQueriesSupportMultiDepthMetadataAndFilteredStats
+=== PAUSE TestAgentHierarchyQueriesSupportMultiDepthMetadataAndFilteredStats
+=== CONT  TestAgentHierarchyQueriesSupportMultiDepthMetadataAndFilteredStats
+--- PASS: TestAgentHierarchyQueriesSupportMultiDepthMetadataAndFilteredStats (0.14s)
+PASS
+ok  	game-admin/backend/internal/http	0.920s

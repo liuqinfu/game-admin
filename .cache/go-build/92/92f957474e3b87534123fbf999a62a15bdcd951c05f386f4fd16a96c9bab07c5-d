@@ -1,0 +1,3 @@
+./catalog.go
+./rabbitmq.go
+./service.go

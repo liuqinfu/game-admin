@@ -1,0 +1,16 @@
+=== RUN   TestGameOpenAPIUsesSignedGameCredential
+--- PASS: TestGameOpenAPIUsesSignedGameCredential (0.11s)
+=== RUN   TestGameOpenAPIEnumDictionaries
+--- PASS: TestGameOpenAPIEnumDictionaries (0.09s)
+=== RUN   TestRechargeCallbackRiskHitFreezesOrderWithoutDirectCredit
+--- PASS: TestRechargeCallbackRiskHitFreezesOrderWithoutDirectCredit (0.10s)
+=== RUN   TestRechargeCallbackRequiresAgentGameAccessAndUsesPaidSettlementBase
+--- PASS: TestRechargeCallbackRequiresAgentGameAccessAndUsesPaidSettlementBase (0.10s)
+=== RUN   TestRechargeCallbackMetricsPreferActualProfitFacts
+--- PASS: TestRechargeCallbackMetricsPreferActualProfitFacts (0.10s)
+=== RUN   TestRechargeCallbackRejectsInvalidDictionaryValues
+--- PASS: TestRechargeCallbackRejectsInvalidDictionaryValues (0.13s)
+=== RUN   TestRechargeCallbackRefundReversesCommissionAndLedger
+--- PASS: TestRechargeCallbackRefundReversesCommissionAndLedger (0.13s)
+PASS
+ok  	game-admin/backend/internal/http	1.592s

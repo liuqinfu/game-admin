@@ -1,0 +1,261 @@
+.login-page {
+  position: relative;
+  min-height: 100vh;
+  min-height: 100dvh;
+  padding: 32px;
+  background:
+    linear-gradient(180deg, #eef4fb 0%, #e6eef8 100%);
+  overflow: hidden;
+}
+
+.login-page__mesh {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(37, 99, 235, 0.14), transparent 24%),
+    radial-gradient(circle at 84% 20%, rgba(249, 115, 22, 0.12), transparent 22%),
+    linear-gradient(135deg, rgba(15, 23, 42, 0.02) 25%, transparent 25%) -18px 0 / 36px 36px,
+    linear-gradient(225deg, rgba(15, 23, 42, 0.02) 25%, transparent 25%) -18px 0 / 36px 36px,
+    linear-gradient(315deg, rgba(15, 23, 42, 0.02) 25%, transparent 25%) 0 0 / 36px 36px,
+    linear-gradient(45deg, rgba(15, 23, 42, 0.02) 25%, transparent 25%) 0 0 / 36px 36px;
+  pointer-events: none;
+}
+
+.login-page__shell {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(360px, 440px);
+  gap: 24px;
+  align-items: stretch;
+  max-width: 1200px;
+  min-height: calc(100dvh - 64px);
+  margin: 0 auto;
+}
+
+.login-page__hero,
+.login-page__form-card.ant-card {
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  background: rgba(255, 255, 255, 0.84);
+}
+
+.login-page__hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  border-radius: 32px;
+}
+
+.login-page__hero-head {
+  max-width: 600px;
+}
+
+.login-page__badge.ant-tag {
+  margin: 0 0 18px;
+  padding: 7px 12px;
+  border-radius: 999px;
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.login-page__title.ant-typography {
+  margin: 0;
+  color: #0f172a;
+  font-size: clamp(40px, 5vw, 58px);
+  line-height: 1.02;
+  letter-spacing: -0.05em;
+}
+
+.login-page__hero-copy.ant-typography {
+  max-width: 540px;
+  margin: 18px 0 0;
+  color: #475569;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.login-page__metric-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.login-page__metric-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 22px;
+  background: #f8fbff;
+}
+
+.login-page__metric-value {
+  color: #0f172a;
+  font-size: 28px;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.login-page__metric-label {
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.login-page__hero-card.ant-card {
+  margin-top: 28px;
+  border-radius: 26px;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  background: #ffffff;
+  box-shadow: none;
+}
+
+.login-page__panel-kicker {
+  color: #1d4ed8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.login-page__panel-copy.ant-typography {
+  margin: 0;
+  color: #334155;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.login-page__tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.login-page__flat-tag {
+  display: inline-flex;
+  align-items: center;
+  min-height: 36px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: #eef4ff;
+  color: #1e3a8a;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.login-page__form-card.ant-card {
+  align-self: center;
+  width: 100%;
+  border-radius: 32px;
+  box-shadow: none;
+}
+
+.login-page__form-card .ant-card-body {
+  padding: 34px 32px 30px;
+}
+
+.login-page__eyebrow {
+  color: #2563eb;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.login-page__form-title.ant-typography {
+  margin: 10px 0 8px;
+  color: #0f172a;
+}
+
+.login-page__form-copy.ant-typography {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.login-page__form .ant-form-item-label > label {
+  font-weight: 700;
+  color: #334155;
+}
+
+.login-page__form .ant-input-affix-wrapper,
+.login-page__form .ant-input,
+.login-page__form .ant-input-password {
+  min-height: 48px;
+}
+
+.login-page__form .ant-input-affix-wrapper:hover,
+.login-page__form .ant-input-affix-wrapper-focused {
+  border-color: #2563eb;
+  box-shadow: none;
+}
+
+.login-page__submit.ant-btn {
+  height: 48px;
+  margin-top: 6px;
+  border: none;
+  background: #1d4ed8;
+  box-shadow: none;
+}
+
+.login-page__submit.ant-btn:hover,
+.login-page__submit.ant-btn:focus {
+  background: #1e40af;
+}
+
+.login-page__assist {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .login-page__hero,
+  .login-page__form-card.ant-card,
+  .login-page__metric-card,
+  .login-page__submit.ant-btn {
+    transition: transform 180ms ease, background-color 180ms ease, border-color 180ms ease, opacity 180ms ease;
+  }
+
+  .login-page__metric-card:hover,
+  .login-page__form-card.ant-card:hover {
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .login-page {
+    padding: 20px;
+  }
+
+  .login-page__shell {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .login-page__hero {
+    padding: 28px;
+  }
+
+  .login-page__form-card.ant-card {
+    max-width: 520px;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .login-page {
+    padding: 16px;
+  }
+
+  .login-page__hero,
+  .login-page__form-card .ant-card-body {
+    padding: 22px;
+  }
+
+  .login-page__metric-grid {
+    grid-template-columns: 1fr;
+  }
+}

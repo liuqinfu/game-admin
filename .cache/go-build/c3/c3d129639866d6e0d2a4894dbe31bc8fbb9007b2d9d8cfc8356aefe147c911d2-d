@@ -1,0 +1,12 @@
+=== RUN   TestGameOpenAPIUsesSignedGameCredential
+--- PASS: TestGameOpenAPIUsesSignedGameCredential (0.11s)
+=== RUN   TestGameOpenAPIEnumDictionaries
+--- PASS: TestGameOpenAPIEnumDictionaries (0.10s)
+=== RUN   TestRegisterWithInviteIsIdempotentForSamePlatformUserAndInvite
+--- PASS: TestRegisterWithInviteIsIdempotentForSamePlatformUserAndInvite (0.17s)
+=== RUN   TestInviteCodeCreationRequiresActiveAgentAndHonorsValidityWindow
+--- PASS: TestInviteCodeCreationRequiresActiveAgentAndHonorsValidityWindow (0.10s)
+=== RUN   TestBindingsDuplicateAttemptStillReturnsBadRequest
+--- PASS: TestBindingsDuplicateAttemptStillReturnsBadRequest (0.10s)
+PASS
+ok  	game-admin/backend/internal/http	1.310s

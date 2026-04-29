@@ -1,0 +1,23 @@
+=== RUN   TestWithdrawalLifecyclePublishesEvents
+=== PAUSE TestWithdrawalLifecyclePublishesEvents
+=== RUN   TestCreateCompensatesFreezeWhenTransactionFails
+=== PAUSE TestCreateCompensatesFreezeWhenTransactionFails
+=== RUN   TestPayoutCompensatesRiskReleaseWhenTransactionFails
+=== PAUSE TestPayoutCompensatesRiskReleaseWhenTransactionFails
+=== CONT  TestWithdrawalLifecyclePublishesEvents
+=== CONT  TestPayoutCompensatesRiskReleaseWhenTransactionFails
+=== CONT  TestCreateCompensatesFreezeWhenTransactionFails
+--- PASS: TestCreateCompensatesFreezeWhenTransactionFails (0.15s)
+
+2026/04/28 23:37:27 [31;1m/Users/leon/project/game-admin/backend/internal/eventbus/service.go:72 [35;1mrecord not found
+[0m[33m[0.024ms] [34;1m[rows:0][0m SELECT * FROM `domain_event` WHERE idempotency_key = "withdrawal.created:WD-1-1777390647699890000" AND `domain_event`.`deleted_at` IS NULL ORDER BY `domain_event`.`id` LIMIT 1
+--- PASS: TestPayoutCompensatesRiskReleaseWhenTransactionFails (0.15s)
+
+2026/04/28 23:37:27 [31;1m/Users/leon/project/game-admin/backend/internal/eventbus/service.go:72 [35;1mrecord not found
+[0m[33m[0.019ms] [34;1m[rows:0][0m SELECT * FROM `domain_event` WHERE idempotency_key = "withdrawal.review:WD-1-1777390647699890000:approved" AND `domain_event`.`deleted_at` IS NULL ORDER BY `domain_event`.`id` LIMIT 1
+
+2026/04/28 23:37:27 [31;1m/Users/leon/project/game-admin/backend/internal/eventbus/service.go:72 [35;1mrecord not found
+[0m[33m[0.016ms] [34;1m[rows:0][0m SELECT * FROM `domain_event` WHERE idempotency_key = "withdrawal.payout:WD-1-1777390647699890000:paid" AND `domain_event`.`deleted_at` IS NULL ORDER BY `domain_event`.`id` LIMIT 1
+--- PASS: TestWithdrawalLifecyclePublishesEvents (0.16s)
+PASS
+ok  	game-admin/backend/internal/services/withdrawal	0.648s

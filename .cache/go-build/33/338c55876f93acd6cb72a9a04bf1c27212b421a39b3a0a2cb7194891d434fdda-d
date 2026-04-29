@@ -1,0 +1,4 @@
+=== RUN   TestTenantBootstrapAcceptanceAndScopedIsolation
+--- PASS: TestTenantBootstrapAcceptanceAndScopedIsolation (0.21s)
+PASS
+ok  	game-admin/backend/internal/http	1.032s

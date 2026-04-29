@@ -1,0 +1,7 @@
+# test log
+getenv TMPDIR
+getenv TMPDIR
+stat /var/folders/pm/drd459d93b52q3nwb_4pgh_c0000gn/T/TestBootstrapBuildsApplication3238909550/001
+stat /var/folders/pm/drd459d93b52q3nwb_4pgh_c0000gn/T/TestOpenSQLiteAndAutoMigrate3897704990/001
+open /var/folders/pm/drd459d93b52q3nwb_4pgh_c0000gn/T
+open /var/folders/pm/drd459d93b52q3nwb_4pgh_c0000gn/T

@@ -1,0 +1,34 @@
+=== RUN   TestAuthLoginAndProtectedRoutes
+--- PASS: TestAuthLoginAndProtectedRoutes (0.17s)
+=== RUN   TestPhase3TenantScopedEndpoints
+=== RUN   TestPhase3TenantScopedEndpoints/tenant_scoped_list_endpoints_only_return_in-scope_records
+=== RUN   TestPhase3TenantScopedEndpoints/tenant_scoped_business_writes_reject_out_of_scope_references
+=== RUN   TestPhase3TenantScopedEndpoints/tenant_scoped_write_actions_reject_out_of_scope_records
+=== RUN   TestPhase3TenantScopedEndpoints/tenant_scoped_risk_case_flows_reject_out_of_scope_cases_and_keep_in-scope_writable
+--- PASS: TestPhase3TenantScopedEndpoints (0.11s)
+    --- PASS: TestPhase3TenantScopedEndpoints/tenant_scoped_list_endpoints_only_return_in-scope_records (0.00s)
+    --- PASS: TestPhase3TenantScopedEndpoints/tenant_scoped_business_writes_reject_out_of_scope_references (0.00s)
+    --- PASS: TestPhase3TenantScopedEndpoints/tenant_scoped_write_actions_reject_out_of_scope_records (0.00s)
+    --- PASS: TestPhase3TenantScopedEndpoints/tenant_scoped_risk_case_flows_reject_out_of_scope_cases_and_keep_in-scope_writable (0.00s)
+=== RUN   TestSettlementBillGenerateConfirmSupportsDailyWeeklyMonthlyCycles
+=== RUN   TestSettlementBillGenerateConfirmSupportsDailyWeeklyMonthlyCycles/daily
+=== RUN   TestSettlementBillGenerateConfirmSupportsDailyWeeklyMonthlyCycles/weekly
+=== RUN   TestSettlementBillGenerateConfirmSupportsDailyWeeklyMonthlyCycles/monthly
+--- PASS: TestSettlementBillGenerateConfirmSupportsDailyWeeklyMonthlyCycles (0.10s)
+    --- PASS: TestSettlementBillGenerateConfirmSupportsDailyWeeklyMonthlyCycles/daily (0.00s)
+    --- PASS: TestSettlementBillGenerateConfirmSupportsDailyWeeklyMonthlyCycles/weekly (0.00s)
+    --- PASS: TestSettlementBillGenerateConfirmSupportsDailyWeeklyMonthlyCycles/monthly (0.00s)
+=== RUN   TestSettlementBillGenerateRejectsMismatchedDerivedCycleEnd
+--- PASS: TestSettlementBillGenerateRejectsMismatchedDerivedCycleEnd (0.09s)
+=== RUN   TestSettlementBillsAndRecalculationTaskEndpoints
+--- PASS: TestSettlementBillsAndRecalculationTaskEndpoints (0.10s)
+=== RUN   TestSettlementBillAndRecalculationValidation
+--- PASS: TestSettlementBillAndRecalculationValidation (0.10s)
+=== RUN   TestRecalculationTaskCapturesOperatorReasonAndScope
+--- PASS: TestRecalculationTaskCapturesOperatorReasonAndScope (0.09s)
+=== RUN   TestCommissionRecalculationTaskEndpoints
+--- PASS: TestCommissionRecalculationTaskEndpoints (0.10s)
+=== RUN   TestRechargeCallbackRequiresAgentGameAccessAndUsesPaidSettlementBase
+--- PASS: TestRechargeCallbackRequiresAgentGameAccessAndUsesPaidSettlementBase (0.10s)
+PASS
+ok  	game-admin/backend/internal/http	1.797s

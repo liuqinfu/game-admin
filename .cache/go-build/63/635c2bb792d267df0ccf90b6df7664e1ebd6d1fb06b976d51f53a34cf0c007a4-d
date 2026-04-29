@@ -1,0 +1,8 @@
+./catalog.go
+./rabbitmq.go
+./rabbitmq_amqp.go
+./service.go
+./transport.go
+./rabbitmq_amqp_test.go
+./rabbitmq_test.go
+./service_test.go

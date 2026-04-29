@@ -1,0 +1,10 @@
+{
+  "service": "identity-service",
+  "modules": "auth,rbac",
+  "targetOS": "linux",
+  "targetArch": "amd64",
+  "port": "8081",
+  "binary": "bin/identity-service",
+  "builtAtUTC": "2026-04-28T13:13:57Z",
+  "gitCommit": "unknown"
+}

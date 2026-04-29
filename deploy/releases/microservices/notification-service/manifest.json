@@ -1,0 +1,10 @@
+{
+  "service": "notification-service",
+  "modules": "notification-consumer",
+  "targetOS": "linux",
+  "targetArch": "amd64",
+  "port": "8095",
+  "binary": "bin/notification-service",
+  "builtAtUTC": "2026-04-28T13:13:57Z",
+  "gitCommit": "unknown"
+}
