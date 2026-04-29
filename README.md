@@ -332,7 +332,6 @@ curl http://127.0.0.1:8095/metrics
 ## 12. 说明
 
 - 旧的 `backend/cmd/server` 和 `docker-compose.yml` 仍保留，适合最小本地联调；当前主线架构以 `docker-compose.microservices.yml` 和 `scripts/*microservices*.sh` 为准
-- 当前项目已经不适合再用“第一阶段 SQLite 原型”来描述
 - 如果你的目标是“继续做治理/架构演进”，请先看：
   - [docs/当前系统架构.md](docs/当前系统架构.md)
   - [docs/微服务部署运行手册.md](docs/微服务部署运行手册.md)
