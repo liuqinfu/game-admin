@@ -1,6 +1,0 @@
-# test log
-getenv TMPDIR
-stat /var/folders/pm/drd459d93b52q3nwb_4pgh_c0000gn/T/TestTenantBootstrapAcceptanceAndScopedIsolation3097384593/001
-stat /var/folders/pm/drd459d93b52q3nwb_4pgh_c0000gn/T/TestTenantBootstrapAcceptanceAndScopedIsolation3097384593
-stat /var/folders/pm/drd459d93b52q3nwb_4pgh_c0000gn/T/TestTenantBootstrapAcceptanceAndScopedIsolation3097384593/002
-open /var/folders/pm/drd459d93b52q3nwb_4pgh_c0000gn/T

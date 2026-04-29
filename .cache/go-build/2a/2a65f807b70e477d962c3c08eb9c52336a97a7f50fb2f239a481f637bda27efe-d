@@ -1,6 +1,0 @@
-=== RUN   TestRunWithConsumerLockSkipsWhenHeld
-=== PAUSE TestRunWithConsumerLockSkipsWhenHeld
-=== CONT  TestRunWithConsumerLockSkipsWhenHeld
---- PASS: TestRunWithConsumerLockSkipsWhenHeld (0.00s)
-PASS
-ok  	game-admin/backend/internal/worker	0.611s

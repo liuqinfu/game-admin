@@ -1,5 +1,0 @@
-./event_payloads.go
-./platform_config.go
-./service.go
-./platform_config_test.go
-./service_test.go

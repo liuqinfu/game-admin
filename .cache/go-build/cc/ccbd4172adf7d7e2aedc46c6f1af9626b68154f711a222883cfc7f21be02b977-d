@@ -1,6 +1,0 @@
-=== RUN   TestGameOpenAPIUsesSignedGameCredential
---- PASS: TestGameOpenAPIUsesSignedGameCredential (0.12s)
-=== RUN   TestGameOpenAPIEnumDictionaries
---- PASS: TestGameOpenAPIEnumDictionaries (0.10s)
-PASS
-ok  	game-admin/backend/internal/http	1.195s

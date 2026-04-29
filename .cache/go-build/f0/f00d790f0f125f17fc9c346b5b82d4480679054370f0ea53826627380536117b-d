@@ -1,6 +1,0 @@
-=== RUN   TestTenantBrandAndGameDeleteSoftDeletesAndAllowsRecreate
---- PASS: TestTenantBrandAndGameDeleteSoftDeletesAndAllowsRecreate (0.11s)
-=== RUN   TestDeleteTenantBrandAndGameRespectsScopeAndReferences
---- PASS: TestDeleteTenantBrandAndGameRespectsScopeAndReferences (0.10s)
-PASS
-ok  	game-admin/backend/internal/http	0.742s

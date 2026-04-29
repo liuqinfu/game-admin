@@ -1,5 +1,0 @@
-./enum_dictionary.go
-./ledger_runtime.go
-./rule_runtime.go
-./scope.go
-./utils.go

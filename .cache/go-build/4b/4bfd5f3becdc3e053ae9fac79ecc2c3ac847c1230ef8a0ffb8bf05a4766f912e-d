@@ -1,9 +1,0 @@
-# test log
-getenv TMPDIR
-stat /var/folders/pm/drd459d93b52q3nwb_4pgh_c0000gn/T/TestRiskCaseWorkflowAndPlatformConfigPhase32850520959/001
-stat /var/folders/pm/drd459d93b52q3nwb_4pgh_c0000gn/T/TestRiskCaseWorkflowAndPlatformConfigPhase32850520959
-stat /var/folders/pm/drd459d93b52q3nwb_4pgh_c0000gn/T/TestRiskCaseWorkflowAndPlatformConfigPhase32850520959/002
-open /var/folders/pm/drd459d93b52q3nwb_4pgh_c0000gn/T
-getenv TMPDIR
-stat /var/folders/pm/drd459d93b52q3nwb_4pgh_c0000gn/T/TestTenantBootstrapAcceptanceAndScopedIsolation3632256365/001
-open /var/folders/pm/drd459d93b52q3nwb_4pgh_c0000gn/T

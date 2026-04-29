@@ -1,4 +1,0 @@
-./router.go
-./routes_agent_tenant.go
-./routes_core.go
-./router_test.go
