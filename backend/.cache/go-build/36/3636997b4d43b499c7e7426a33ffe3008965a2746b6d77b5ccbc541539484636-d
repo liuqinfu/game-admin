@@ -1,4 +1,0 @@
-./bootstrap.go
-./db.go
-./health.go
-./migrate.go

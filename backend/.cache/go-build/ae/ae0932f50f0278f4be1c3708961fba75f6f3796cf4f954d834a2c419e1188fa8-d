@@ -1,4 +1,0 @@
-=== RUN   TestRBACManagementEndpointsAndAuditLogs
---- PASS: TestRBACManagementEndpointsAndAuditLogs (0.19s)
-PASS
-ok  	game-admin/backend/internal/http	0.750s
